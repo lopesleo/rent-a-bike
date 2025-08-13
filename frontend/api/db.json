@@ -1,0 +1,94 @@
+{
+    "clientes": [
+        {
+            "id": "6",
+            "nome": "Ana Silva",
+            "cpf": "123.456.789-00",
+            "telefone": "(21) 99999-1234",
+            "endereco": "Rua A, 123",
+            "data_nascimento": "1990-01-01",
+            "email": "ana.silva@example.com",
+            "doc_path": "https://example.com/docs/12345678900.pdf",
+            "foto_path": "../../public/fotos/Ana_Silva.png"
+        },
+        {
+            "id": "7",
+            "nome": "Carlos Souza",
+            "cpf": "987.654.321-00",
+            "telefone": "(21) 98888-4321",
+            "endereco": "Rua B, 456",
+            "data_nascimento": "1985-05-15",
+            "email": "carlos.souza@example.com",
+            "doc_path": "https://example.com/docs/98765432100.pdf",
+            "foto_path": "../../public/fotos/Carlos_Souza.png"
+        }
+    ],
+    "funcionarios": [
+        {
+            "id": "5",
+            "nome": "Mariana Costa"
+        }
+    ],
+    "itens": [
+        {
+            "id": "11",
+            "codigo": "BIC001",
+            "modelo": "Bicicleta Elétrica",
+            "valorHora": 12,
+            "disponivel": true
+        },
+        {
+            "id": "12",
+            "codigo": "CAP002",
+            "modelo": "Capacete de Segurança",
+            "valorHora": 2.5,
+            "disponivel": true
+        },
+        {
+            "id": "13",
+            "codigo": "ALM003",
+            "modelo": "Alarme antifurto",
+            "valorHora": 3,
+            "disponivel": true
+        }
+    ],
+    "locacoes": [
+        {
+            "id": "57",
+            "cliente": {
+                "id": 6,
+                "nome": "Ana Silva"
+            },
+            "funcionario": {
+                "id": 5,
+                "nome": "Mariana Costa"
+            },
+            "data_hora_locacao": "2025-05-16 19:20:02",
+            "horas_contratadas": 4,
+            "data_hora_entrega_prevista": "2025-05-16 23:20:02",
+            "desconto_aplicado": 0,
+            "valor_total_previsto": 58,
+            "status": "EM_ANDAMENTO",
+            "itens": [
+                {
+                    "item_id": 11,
+                    "valor_hora": 12,
+                    "valor_total": 48
+                },
+                {
+                    "item_id": 12,
+                    "valor_hora": 2.5,
+                    "valor_total": 10
+                }
+            ]
+        }
+    ],
+    "devolucoes": [],
+    "relatorio/locacoes": [
+        { "data": "2025-06-01", "valor_pago": 120.50 },
+        { "data": "2025-06-02", "valor_pago": 80.00 },
+        { "data": "2025-06-03", "valor_pago": 150.00 },
+        { "data": "2025-06-04", "valor_pago": 60.00 },
+        { "data": "2025-06-05", "valor_pago": 200.00 }
+    ]
+}

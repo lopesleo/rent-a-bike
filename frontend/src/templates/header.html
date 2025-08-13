@@ -1,0 +1,88 @@
+<nav
+    class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary shadow-sm"
+    style="z-index: 1"
+>
+    <div class="container">
+        <a
+            class="navbar-brand d-flex align-items-center"
+            href="/"
+            style="position: relative; z-index: 2"
+        >
+            <img
+                src="/assets/logo.png"
+                alt="Rent-A-Bike"
+                class="me-6"
+                style="
+                    height: 150px;
+                    margin-top: -50px;
+                    margin-bottom: -60px;
+                    transition: height 0.3s;
+                "
+            />
+        </a>
+        <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Alternar navegação"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto align-items-center">
+                <li class="nav-item mx-1" id="menu-registrarlocacao">
+                    <a
+                        class="nav-link px-3 py-2 rounded-pill fw-semibold"
+                        href="registrarlocacao"
+                    >
+                        <i class="bi bi-plus-circle me-1"></i>Nova Locação
+                    </a>
+                </li>
+                <li class="nav-item mx-1" id="menu-listarlocacao">
+                    <a
+                        class="nav-link px-3 py-2 rounded-pill fw-semibold"
+                        href="listarlocacao"
+                    >
+                        <i class="bi bi-list-ul me-1"></i>Locações
+                    </a>
+                </li>
+                <li class="nav-item mx-1" id="menu-registrardevolucao">
+                    <a
+                        class="nav-link px-3 py-2 rounded-pill fw-semibold"
+                        href="registrardevolucao"
+                    >
+                        <i class="bi bi-check-circle me-1"></i>Nova Devolução
+                    </a>
+                </li>
+                <li class="nav-item mx-1" id="menu-listardevolucao">
+                    <a
+                        class="nav-link px-3 py-2 rounded-pill fw-semibold"
+                        href="listardevolucao"
+                    >
+                        <i class="bi bi-arrow-return-left me-1"></i>Devoluções
+                    </a>
+                </li>
+                <li class="nav-item mx-1" id="menu-relatorio">
+                    <a
+                        class="nav-link px-3 py-2 rounded-pill fw-semibold"
+                        href="relatorio"
+                    >
+                        <i class="bi bi-arrow-return-left me-1"></i>Relatório
+                    </a>
+                </li>
+                <li class="nav-item mx-1">
+                    <a
+                        class="nav-link px-3 py-2 rounded-pill fw-semibold"
+                        id="logout"
+                        href=""
+                    >
+                        <i class="bi bi-person-lines-fill me-1"></i>Logout
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

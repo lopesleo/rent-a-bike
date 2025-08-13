@@ -1,0 +1,128 @@
+body {
+    padding-top: 2rem;
+}
+
+.linha-item {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.linha-avarias td {
+    border: none !important;
+    padding: 0 0.5rem 0.5rem 0.5rem !important;
+}
+
+.avarias-container {
+    background-color: #f8f9fa;
+    border-radius: 0.25rem;
+    border: 1px solid #e9ecef;
+}
+
+.avarias-titulo {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #dc3545;
+    padding: 0.5rem 0.75rem 0.25rem;
+}
+
+.avaria-item {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 0.75rem;
+    align-items: start;
+
+    width: 100%;
+
+    background-color: #fff;
+    border-radius: 0.25rem;
+    margin-top: 0.5rem;
+    padding: 0.75rem;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+}
+
+.avaria-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.avaria-descricao {
+    line-height: 1.5;
+    font-size: 0.875rem;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+#modal-imagem.modal {
+    background-color: rgba(10, 10, 10, 0.9);
+    backdrop-filter: blur(3px);
+}
+
+#modal-imagem .modal-content {
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    outline: 0;
+}
+
+#modal-imagem .modal-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInLightbox 0.4s ease;
+}
+
+#modal-imagem .img-fluid {
+    max-height: 80vh;
+    max-width: 90vw;
+    width: auto;
+    height: auto;
+    border-radius: 0.375rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-caption {
+    color: #f1f1f1;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+#lightbox-close-button {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    font-size: 1.2rem;
+    opacity: 0.7;
+    transition:
+        opacity 0.2s,
+        transform 0.2s;
+    z-index: 1060;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0.5rem;
+    line-height: 1;
+}
+
+#lightbox-close-button:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+#modal-imagem .modal-header {
+    display: none !important;
+}
+@keyframes fadeInLightbox {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.2;
+    }
+}

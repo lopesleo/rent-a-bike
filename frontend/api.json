@@ -1,0 +1,60 @@
+{
+    "locacoes": [
+        {
+            "id": 1,
+            "dataHora": "2025-05-03T10:00:00-03:00",
+            "funcionario": "F001",
+            "clienteCodigo": "C001",
+            "itens": [
+                {
+                    "codigo": "B001",
+                    "descricao": "Bicicleta Aro 29",
+                    "valorHora": 5,
+                    "horas": 2
+                }
+            ],
+            "desconto": 0,
+            "total": 10
+        }
+    ],
+    "devolucoes": [
+        {
+            "id": 1,
+            "locacaoId": 1,
+            "dataHora": "2025-05-03T12:00:00-03:00",
+            "valorCobrado": 10
+        }
+    ],
+    "bicicletas": [
+        {
+            "codigo": "B001",
+            "descricao": "Bicicleta Aro 29",
+            "valorHora": 5
+        },
+        {
+            "codigo": "B002",
+            "descricao": "Bicicleta Aro 26",
+            "valorHora": 4
+        }
+    ],
+    "clientes": [
+        {
+            "codigo": "C001",
+            "nome": "João Silva"
+        },
+        {
+            "codigo": "C002",
+            "nome": "Maria Souza"
+        }
+    ],
+    "funcionarios": [
+        {
+            "codigo": "F001",
+            "nome": "Ana Pereira"
+        },
+        {
+            "codigo": "F002",
+            "nome": "Pedro Santos"
+        }
+    ]
+}

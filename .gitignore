@@ -1,0 +1,67 @@
+# Node.js dependencies
+node_modules/
+# Vite cache
+.vite/
+# Build output
+dist/
+# Environment files
+.env
+.env.local
+.env.development
+.env.production
+# log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+# PNPM store
+.pnpm-store/
+# IDE and system files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+# Composer dependencies
+/backend/vendor/
+# Composer autoload and lock
+/backend/composer.lock
+# PHPStan cache
+/backend/phpstan.cache
+# Kahlan logs
+/backend/kahlan-report/
+# PHPUnit logs (if any)
+/backend/phpunit.xml
+# Infrastructure state (Docker)
+/infra/*.log
+# Makefile backup
+*~
+# Git ignore itself
+
+# Git ignore photos
+/backend/public/fotos
+# Ignore test results
+test-*
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

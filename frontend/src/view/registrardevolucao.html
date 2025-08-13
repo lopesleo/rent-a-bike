@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Registrar Devolução</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body class="d-flex flex-column min-vh-100">
+        <div id="app" class="d-flex flex-column flex-grow-1">
+            <div class="container py-5 flex-grow-1">
+                <h2 class="mb-4">Registrar Devolução</h2>
+
+                <!-- 1) Infos da locação/cliente -->
+                <div
+                    id="info-devolucao"
+                    class="d-flex justify-content-between mb-4"
+                ></div>
+
+                <!-- Seleção de funcionário -->
+                <div hidden class="mb-3">
+                    <label for="funcionario" class="form-label"
+                        >Funcionário</label
+                    >
+                    <select id="funcionario" class="form-select" required>
+                        <option value="">Selecione</option>
+                        <!-- Funcionários serão injetados aqui -->
+                    </select>
+                </div>
+
+                <form id="form-devolucao">
+                    <!-- Tabela de itens -->
+                    <table
+                        id="tabela-itens-locacao"
+                        class="table table-striped mb-4"
+                    >
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Valor/hora</th>
+                                <th>Horas</th>
+                                <th>Total</th>
+                                <th>Limpeza</th>
+                            </tr>
+                        </thead>
+                        <tbody id="itens-locacao"></tbody>
+                    </table>
+
+                    <!-- 3) Resumo previsto. (Será recalculado ao finalizar a devolução) -->
+                    <div class="mb-3">
+                        <label class="form-label">Resumo previsto.</label>
+                        <ul class="list-group">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    Horário previsto para devolução:
+                                    <span id="horario-previsto-devolucao"
+                                        >—</span
+                                    >
+                                </li>
+                                <li class="list-group-item">
+                                    Horas de locação:
+                                    <span id="horas-locacao">—</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Horário de devolução:
+                                    <span id="horario-devolucao">—</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Atraso (horas extra):
+                                    <span id="atraso">—</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Horas reais:
+                                    <span id="horas-atraso">—</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Custo das avarias:
+                                    <span id="custo-avarias">—</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Custo da limpeza:
+                                    <span id="custo-limpeza">—</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Desconto: <span id="desconto">—</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Valor a Pagar:
+                                    <span id="valor-pagar">—</span>
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <button
+                        type="submit"
+                        class="btn btn-primary shadow-sm px-4"
+                    >
+                        Registrar Devolução
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Injeção de header e footer -->
+        <script type="module" src="/src/main.ts"></script>
+        <!-- Script de registrar devolução -->
+        <script
+            defer
+            type="module"
+            src="/src/devolucao/maindevolucao.ts"
+        ></script>
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

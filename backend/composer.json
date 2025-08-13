@@ -1,0 +1,46 @@
+{
+  "name": "rent-a-bike/backend",
+  "description": "Backend da aplicação Rent-A-Bike para gerenciamento de locações e devoluções.",
+  "license": "MIT",
+  "scripts": {
+    "check": "phpstan analyze",
+    "test": "kahlan",
+    "start": "php -S localhost:8001 -t public",
+    "dump": "composer dump-autoload",
+    "db:e": "docker exec -i rentabike-db mariadb -u root -proot < src/Database/rent-a-bike.sql",
+    "db:seed": "docker exec -i rentabike-db mariadb -u root -proot < src/Database/db_mock.sql",
+    "db:relatorio": "docker exec -i rentabike-db mariadb -u root -proot < src/Database/rent_a_bike_relatorio.sql",
+    "db": "composer run db:e && composer run db:seed"
+  },
+  "require": {
+    "slim/slim": "^4.14",
+    "slim/psr7": "^1.7"
+  },
+  "require-dev": {
+    "kahlan/kahlan": "^6.0",
+    "phpstan/phpstan": "^2.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "": [
+        "src/",
+        "src/Database",
+        "src/Locacao",
+        "src/Devolucao",
+        "src/Cliente",
+        "src/Item",
+        "src/Transacao",
+        "src/Infra",
+        "src/LocacaoItem",
+        "src/Cliente",
+        "src/Funcionario",
+        "src/Avaria",
+        "src/Usuario",
+        "src/Utils",
+        "src/Middlewares",
+        "src/Middleware",
+        "src/Relatorio"
+      ]
+    }
+  }
+}

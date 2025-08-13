@@ -1,0 +1,45 @@
+body,
+html {
+    height: 100%;
+    overflow: hidden; /* Evita barras de rolagem desnecessárias no desktop */
+}
+.main-container {
+    display: flex;
+    min-height: 100vh;
+}
+.welcome-section {
+    background-color: #0d6efd; /* Cor primária do Bootstrap */
+    color: white;
+}
+.form-section {
+    background-color: #f8f9fa;
+}
+.welcome-section,
+.form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+.login-card {
+    width: 100%;
+    max-width: 420px;
+    border: none;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+.logo {
+    height: 120px;
+    margin-bottom: -15px;
+    margin-top: -30px;
+}
+/* Oculta a seção de boas-vindas em telas pequenas */
+@media (max-width: 767.98px) {
+    .welcome-section {
+        display: none;
+    }
+    body,
+    html {
+        overflow: auto; /* Permite rolagem em telas menores */
+    }
+}
