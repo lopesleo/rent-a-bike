@@ -8,7 +8,7 @@
 
 ## 1. Alunos
 
-- **Leonardo Lopes Almeida** – [leonardo.lopes@cefet-rj.br](mailto:leonardo.lopes@aluno.cefet-rj.br)
+- **Leonardo Lopes Almeida** – [leonardo.lopes@aluno.cefet-rj.br](mailto:leonardo.lopes@aluno.cefet-rj.br)
 - **Celso Dames Junior** – [celso.junior@aluno.cefet-rj.br](mailto:celso.junior@aluno.cefet-rj.br)
 
 ---
