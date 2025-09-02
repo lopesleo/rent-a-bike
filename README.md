@@ -78,7 +78,7 @@ Arquitetura MVP, testes unitários/integrados, análise estática de código e i
 1. **Clone o repositório**:
 
    ```bash
-   git clone https://gitlab.com/cefet-nf/pis-2025-1/g1.git
+   git clone https://github.com/lopesleo/rent-a-bike.git
    cd Rent-A-Bike
    ```
 
